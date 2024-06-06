@@ -7,6 +7,11 @@
 // 2. Include any default variable overrides here
 $input-btn-padding-y: 0.75rem;
 $input-btn-padding-x: 2.5rem;
+
+$grid-gutter-width: 0.5rem;
+
+$card-border-radius: 2rem;
+
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../bootstrap/scss/variables";
 @import "../../bootstrap/scss/variables-dark";
@@ -20,6 +25,20 @@ $custom-border-widths: (
   10: 10px,
 );
 $border-widths: map-merge($border-widths, $custom-border-widths);
+
+//cards
+$card-color: $info;
+$card-bg: $dark;
+$theme-colors: (
+  "danger": #ff0077,
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "light": $light,
+  "dark": $dark,
+);
 // 5. Include remainder of required parts
 @import "../../bootstrap/scss/maps";
 @import "../../bootstrap/scss/mixins";
