@@ -11,6 +11,10 @@ $input-btn-padding-x: 2.5rem;
 $grid-gutter-width: 0.5rem;
 
 $card-border-radius: 2rem;
+//cambio colori
+$danger: #ff0077;
+$info: #00ffea;
+$light: #f3eeff;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../bootstrap/scss/variables";
@@ -29,16 +33,14 @@ $border-widths: map-merge($border-widths, $custom-border-widths);
 //cards
 $card-color: $info;
 $card-bg: $dark;
-$theme-colors: (
-  "danger": #ff0077,
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "light": $light,
-  "dark": $dark,
+
+$custom-theme-colors: (
+  epicode-1: #5726c3,
+  epicode-2: #8625a5,
+  epicode-3: #cb2376,
 );
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
 // 5. Include remainder of required parts
 @import "../../bootstrap/scss/maps";
 @import "../../bootstrap/scss/mixins";
